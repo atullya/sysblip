@@ -1,0 +1,43 @@
+
+-------------------------------------------
+[2026-06-05 07:28:09] SYSTEM HEALTH REPORT - 2026-06-05 07:28:09
+-------------------------------------------
+-------------------------------------------
+[2026-06-05 07:28:09] CPU USAGE
+[2026-06-05 07:28:09] CPU Used: 21.6%
+-------------------------------------------
+[2026-06-05 07:28:09] MEMORY USAGE
+[2026-06-05 07:28:09] Total: 5843MB  |  Used: 3983MB  |  Available: 1860MB
+[2026-06-05 07:28:09] Memory Used: 68.2%
+-------------------------------------------
+[2026-06-05 07:28:09] DISK USAGE
+[2026-06-05 07:28:09] Mount: /  |  Size: 234G  |  Used: 102G  |  Avail: 121G  |  Usage: 46%
+-------------------------------------------
+[2026-06-05 07:28:09] NETWORK CONNECTIVITY
+[2026-06-05 07:28:09] Reachable: 8.8.8.8
+[2026-06-05 07:28:09] Reachable: 1.1.1.1
+-------------------------------------------
+[2026-06-05 07:28:09] API HEALTH CHECK
+[2026-06-05 07:28:09] UP   [200] https://httpbin.org/get  (1.294895s)
+[2026-06-05 07:28:09] UP   [200] https://jsonplaceholder.typicode.com/posts/1  (0.107793s)
+-------------------------------------------
+[2026-06-05 07:28:09] LOG ERROR SCAN
+[2026-06-05 07:28:09] File: /var/log/syslog  |  Matches: 210
+[2026-06-05 07:28:09] Last 3 matching lines from /var/log/syslog:
+[2026-06-05 07:28:09]   >> 2026-06-05T07:26:55.930071+05:45 atullya tracker-miner-fs-3[6900]: (tracker-extract-3:6900): GLib-GIO-WARNING **: 07:26:55.929: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+[2026-06-05 07:28:09]   >> 2026-06-05T07:27:49.536722+05:45 atullya tracker-miner-fs-3[6911]: (tracker-extract-3:6911): GLib-GIO-WARNING **: 07:27:49.536: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+[2026-06-05 07:28:09]   >> 2026-06-05T07:28:03.937385+05:45 atullya tracker-miner-fs-3[6921]: (tracker-extract-3:6921): GLib-GIO-WARNING **: 07:28:03.936: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+[2026-06-05 07:28:09] File: /var/log/auth.log  |  Matches: 2
+[2026-06-05 07:28:09] Last 3 matching lines from /var/log/auth.log:
+[2026-06-05 07:28:09]   >> 2026-06-05T07:23:57.937938+05:45 atullya dbus-daemon[917]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=3203 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.11" (uid=0 pid=968 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+[2026-06-05 07:28:09]   >> 2026-06-05T07:23:57.940017+05:45 atullya dbus-daemon[917]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=3203 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.11" (uid=0 pid=968 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+-------------------------------------------
+[2026-06-05 07:28:09] TOP 5 PROCESSES BY CPU
+[2026-06-05 07:28:09] user        5620 19.9  3.7 55360580 224544 ?     Sl   06:55   6:30 /snap/brave/636/opt/brave.com/brave/brave --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=5573 --enable-crash-reporter=4db39c76-d8eb-4988-8b05-be864ee4a132, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,5838344088461408672,2193512640272336924,262144 --field-trial-handle=3,i,8833009962937714317,9495742404751353425,262144 --enable-features=BraveDarkModeBlock --variations-seed-version=main@422ce3215e97b6407c20b598d65435d647519841 --pseudonymization-salt-handle=7,i,11777185411861850627,5639354474576440369,4 --trace-process-track-uuid=3190708988185955192
+[2026-06-05 07:28:09] user        5818 13.9  6.6 1518592452 397120 ?   Sl   06:55   4:32 /snap/brave/636/opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=5573 --enable-crash-reporter=4db39c76-d8eb-4988-8b05-be864ee4a132, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=9 --time-ticks-at-unix-epoch=-1780621225840090 --launch-time-ticks=608218141 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,17831114048050920594,6984323338467853536,2097152 --field-trial-handle=3,i,8833009962937714317,9495742404751353425,262144 --enable-features=BraveDarkModeBlock --variations-seed-version=main@422ce3215e97b6407c20b598d65435d647519841 --pseudonymization-salt-handle=7,i,11777185411861850627,5639354474576440369,4 --trace-process-track-uuid=3190708994745248135
+[2026-06-05 07:28:09] user        3572  6.8  3.3 4235184 201228 ?      Ssl  06:45   2:54 /usr/bin/gnome-shell
+[2026-06-05 07:28:09] user        3305  6.1  0.7 783028 43428 tty2     Sl+  06:45   2:35 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+[2026-06-05 07:28:09] user        6278  5.1  5.8 1518491140 352512 ?   Sl   07:03   1:17 /snap/brave/636/opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=5573 --enable-crash-reporter=4db39c76-d8eb-4988-8b05-be864ee4a132, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=36 --time-ticks-at-unix-epoch=-1780621225840090 --launch-time-ticks=1070463462 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,12375049929844267353,4254179725618979053,2097152 --field-trial-handle=3,i,8833009962937714317,9495742404751353425,262144 --enable-features=BraveDarkModeBlock --variations-seed-version=main@422ce3215e97b6407c20b598d65435d647519841 --pseudonymization-salt-handle=7,i,11777185411861850627,5639354474576440369,4 --trace-process-track-uuid=3190709020045378058
+-------------------------------------------
+[2026-06-05 07:28:09] REPORT COMPLETE - Saved to health_monitor.log
+-------------------------------------------

@@ -1,0 +1,19 @@
+# Files & Directories
+ls -la                        # list files with details
+mkdir -p backups/2024         # create nested dirs
+cp file.txt backup/           # copy
+mv file.txt newname.txt       # move/rename
+rm -rf old_folder/            # delete (careful!)
+
+# Reading & Searching
+cat file.txt                  # print file
+grep "error" app.log          # search inside file
+grep -r "TODO" ./src          # recursive search
+find . -name "*.jpg"          # find files by name
+find . -mtime +7              # files older than 7 days
+
+# Pipes & Redirection
+cat app.log | grep "ERROR" | wc -l     # count error lines
+echo "hello" > file.txt                # write to file (overwrite)
+echo "world" >> file.txt               # append to file
+command 2>/dev/null                    # suppress errors
