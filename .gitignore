@@ -1,0 +1,38 @@
+# Ignore log files
+*.log
+*.log.*
+
+# Backups and swap files
+*~
+*.swp
+*.save
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Python (if used in helpers/tests)
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.env.local
+venv/
+.venv/
+
+# Misc
+*.tmp
+*.pid
+cache/
+
+# Ignore generated archives and build artifacts
+dist/
+build/
+*.tar.gz
+*.zip
